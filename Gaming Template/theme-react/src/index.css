@@ -1,0 +1,40 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-white text-black transition-colors duration-300;
+}
+
+html {
+    /* Default to dark mode when no preference is saved in localStorage */
+    @apply dark:bg-gray-800 dark:text-white;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5AC4D1;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #15c224;
+}
+/* 
+ins.adsbygoogle {
+    display: block;
+    max-width: 100%;
+} */
