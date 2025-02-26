@@ -8,9 +8,10 @@ import { Helmet } from 'react-helmet';
 function Category() {
   const { name } = useParams();
   const [state, setState] = useState([]);
+  console.log(state);
+  
   const [visibleGames, setVisibleGames] = useState(7);
 
-  
   const getGameListFunc = async () => {
     try {
       let apiUrl = name === "games"
