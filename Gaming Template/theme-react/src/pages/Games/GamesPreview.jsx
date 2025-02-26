@@ -17,15 +17,24 @@ function GamesPreview() {
         const api_res = await axios.get("https://pub.gamezop.com/v3/games?id=9632&lang=en");
         const games = api_res?.data?.games || [];
         setGamesList(games)
+        
         // const New_Data = api_res?.data?.games?.filter(
         //     (item) => item?.name?.en?.toLowerCase().replace(/\s+/g, "-") === name
         // );
 
         const New_Data = games.filter((item) => slugify(item?.name?.en) === name); setState(New_Data[0] || null);
     };
+    const getGameListFunc2 = async () => {
+        const api_res = await axios.get("https://tajigames.com/api/api.php?type=gameList");
+        const games = api_res?.data?.games || [];
+        setGamesList(games)
+        const New_Data = games.filter((item) => slugify(item?.name?.en) === name); setState(New_Data[0] || null);
+
+    };
 
     useEffect(() => {
         getGameListFunc();
+        getGameListFunc2();
         setOnPreview(false)
     }, [name]);
 
@@ -138,8 +147,9 @@ function GamesPreview() {
                     </div>
                     {/* Rest of the Content */}
 
-                    <div className="lg:w-[300px] w-full lg:ml-4 dark:bg-gray-800 bg-gray-50 p-6 rounded-xl text-black dark:text-white max-h-[730px]">
-                        <h2 className="text-xl font-bold mb-4">About Game</h2>
+                     <div className="lg:w-[300px] w-full lg:ml-4 dark:bg-gray-800 bg-gray-50 p-6 rounded-xl text-black dark:text-white max-h-[730px]">
+                        <h2 className="text-xl font-bold mb-4">About Taji Games
+                        </h2>
 
                         {state?.name?.en && (
                             <p className='flex gap-2'>
@@ -201,7 +211,7 @@ function GamesPreview() {
                                 ></iframe>
                             )}
                         </div>
-                    </div>
+                    </div> 
 
                     <div className='w-[300px] '>
                         <AdCMP adSize={`300x700`} dataAdSlot="" />

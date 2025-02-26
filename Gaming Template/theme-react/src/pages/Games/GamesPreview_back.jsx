@@ -9,6 +9,11 @@ function GamesPreview() {
     const [state, setState] = useState([]);
 
     const getGameListFunc = async () => {
+        const api_res = await axios.get("https://tajigames.com/api/api.php?type=gameList")
+        const New_Data = api_res?.data?.games?.filter((item) => item?.name?.en?.toLowerCase().replace(/\s+/g, "-") === name);
+        setState(New_Data[0] || null);
+    }
+    const getGameListFunc2 = async () => {
         const api_res = await axios.get("https://pub.gamezop.com/v3/games?id=9632&lang=en")
         const New_Data = api_res?.data?.games?.filter((item) => item?.name?.en?.toLowerCase().replace(/\s+/g, "-") === name);
         setState(New_Data[0] || null);
@@ -16,6 +21,7 @@ function GamesPreview() {
 
     useEffect(() => {
         getGameListFunc();
+        getGameListFunc2();
     }, [name]);
 
     return (

@@ -131,31 +131,34 @@ const Home = () => {
                         <div className="rounded-lg bg-gray-50 dark:bg-gray-400 w-full flex items-center mb-7 lg:mb-12 xl:mb-16">
                             <div className="p-4 md:p-9">
                                 <header className="text-base mb-6 lg:py-[3.5px] lg:text-xl !leading-none font-bold relative pl-4 after:absolute after:w-[3px] md:after:w-[4px] after:h-[110%] after:top-[-5%] after:bg-[#5AC4D1] after:left-0 after:rounded-md">
-                                    <span>About GameZone</span>
+                                    <span>About Taji Games
+                                    </span>
                                 </header>
                                 <div className="2xl:pr-36 flex flex-col gap-4 sm:gap-9 lg:gap-10">
                                     <section>
                                         <h1 className="text-xl lg:text-2xl mb-6 font-bold capitalize">
-                                            Discover Endless Fun with TheGameZone
+                                        Discover Endless Fun With Taji Games
+
                                         </h1>
                                         <p className="leading-8 font-medium capitalize">
-                                            TheGameZone is your ultimate destination for free online games, offering a diverse selection of thrilling experiences for players of all ages. Accessible on any device—desktop, mobile, or tablet—our platform delivers instant entertainment without the hassle of downloads or registrations.
+                                        Taji Games Is Your Ultimate Destination For Online Games, Offering A Diverse Selection Of Thrilling Experiences For Players Of All Ages. Accessible On Any Device—Desktop, Mobile, Or Tablet—Our Platform Delivers Instant Entertainment Without The Hassle Of Downloads Or Registrations.
+                                        Why Choose Taji Games?
                                         </p>
                                     </section>
 
                                     <section>
                                         <h2 className="text-xl lg:text-2xl mb-6 font-bold capitalize">
-                                            Why Choose TheGameZone?
+                                        Why Choose Taji Games?
                                         </h2>
                                         <p className="leading-8 font-medium capitalize">
-                                            TheGameZone stands out as a trusted platform for online gaming, offering:
+                                        Taji Games Stands Out As A Trusted Platform For Online Gaming, Offering:
                                         </p>
                                         <div className="px-10">
                                             <ul className="list-disc text-base font-medium capitalize leading-8">
-                                                <li>A constantly updated library with thousands of games</li>
-                                                <li>Quick access—no downloads, pop-ups, or logins required</li>
-                                                <li>Games optimized for desktop, mobile, and tablets</li>
-                                                <li>Exciting single and multiplayer experiences</li>
+                                                <li>A Constantly Updated Library With Thousands Of Games</li>
+                                                <li>Quick Access—No Downloads, Pop-Ups, Or Logins Required</li>
+                                                <li>Games Optimized For Desktop, Mobile, And Tablets</li>
+                                                <li>Exciting Single And Multiplayer Experiences</li>
                                             </ul>
                                         </div>
                                     </section>
@@ -165,7 +168,7 @@ const Home = () => {
                                             Our Vision
                                         </h2>
                                         <p className="leading-8 font-medium capitalize">
-                                            At TheGameZone, we are committed to creating a seamless gaming experience that connects players across the globe. Our platform is designed to inspire joy, creativity, and friendly competition for casual and serious gamers alike.
+                                        At Taji Games, We Are Committed To Creating A Seamless Gaming Experience That Connects Players Across The Globe. Our Platform Is Designed To Inspire Joy, Creativity, And Friendly Competition For Casual And Serious Gamers Alike.
                                         </p>
                                     </section>
 
@@ -176,11 +179,14 @@ const Home = () => {
                                         </p>
                                         <div className="px-10">
                                             <ul className="list-disc text-base font-medium capitalize leading-8">
-                                                <li><Link to="/game/ludo-dash" title="Ludo Dash Game">Ludo Dash</Link></li>
-                                                <li><Link to="/game/fruit-chop" title="Fruit Chop Game">Fruit Chop</Link></li>
-                                                <li><Link to="/game/escape-run" title="Escape Run Game">Escape Run</Link></li>
+                                                <li><Link to="/game/ludo-dash" title="Ludo Dash Game">Ludo</Link></li>
+                                                <li><Link to="/game/fruit-chop" title="Fruit Chop Game">Pirates</Link></li>
+                                                <li><Link to="/game/escape-run" title="Escape Run Game">Carom</Link></li>
                                                 <li><Link to="/game/save-your-pinky" title="Save Your Pinky Game">Save Your Pinky</Link></li>
                                                 <li><Link to="/game/happy-kittens-puzzle" title="Happy Kittens Puzzle Game">Happy Kittens Puzzle</Link></li>
+                                                <li><Link to="/game/happy-kittens-puzzle" title="Happy Kittens Puzzle Game">Escape Run</Link></li>
+                                                <li><Link to="/game/happy-kittens-puzzle" title="Happy Kittens Puzzle Game">Fruit Chop</Link></li>
+
                                             </ul>
                                         </div>
                                     </section>
@@ -190,7 +196,8 @@ const Home = () => {
                                             Explore Our Top Categories
                                         </h2>
                                         <p className="leading-8 font-medium capitalize">
-                                            Whether you're seeking action, strategy, sports, or puzzles, TheGameZone has it all. Dive into popular categories such as:
+                                        Whether You're Seeking Action, Strategy, Sports, Or Puzzles, Taji Games Has It All. Dive Into Popular
+                                        Categories Such As:
                                         </p>
                                         <div className="px-10">
                                             <ul className="list-disc text-base font-medium capitalize leading-8">
@@ -208,7 +215,7 @@ const Home = () => {
                                             Join Our Community
                                         </h2>
                                         <p className="leading-8 font-medium capitalize">
-                                            Be part of TheGameZone's growing community of gamers. Share your favorite games, compete with friends, and discover new challenges every day. With no barriers to entry, gaming has never been this fun and easy.
+                                        Be Part Of Taji Games Growing Community Of Gamers. Share Your Favorite Games, Compete With Friends, And Discover New Challenges Every Day. With No Barriers To Entry, Gaming Has Never Been This Fun And Easy.
                                         </p>
                                     </section>
 
@@ -217,7 +224,7 @@ const Home = () => {
                                             Your Gateway to Free Online Gaming
                                         </h2>
                                         <p className="leading-8 font-medium capitalize">
-                                            TheGameZone is more than just a platform; it's a haven for gamers who value convenience, variety, and quality. Start your gaming journey today and enjoy unlimited access to the best free games online.
+                                        Taji Games Is More Than Just A Platform; It's A Haven For Gamers Who Value Convenience, Variety, And Quality. Start Your Gaming Journey Today And Enjoy Unlimited Access To The Best Online Games.
                                         </p>
                                     </section>
                                 </div>

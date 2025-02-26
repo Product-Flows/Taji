@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function GameCard({ name, banner, slug }) {
+function GameCard({ name, banner, slug, state }) {
     const [imageLoaded, setImageLoaded] = useState(false);
     const [imageBlur, setImageBlur] = useState(true); // New state variable for blur effect
 
@@ -9,6 +9,8 @@ function GameCard({ name, banner, slug }) {
         setImageLoaded(true);
         setTimeout(() => setImageBlur(false), 800);
     };
+    const[url,icon,title] = state;
+    console.log();
 
     return (
         <div className={`bg-[#ffff] dark:bg-gray-800 rounded-[10px] overflow-hidden mt-3 shadow-xl cursor-pointer`}>

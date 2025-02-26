@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import GameCard from '../../components/GameCard/GameCard';
+import GameCard2 from '../../components/GameCard/GameCard';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Helmet } from 'react-helmet';
@@ -60,12 +61,13 @@ function Category() {
         
         <div className={`grid gap-4 mt-1 ${
           name === "all-games" ? "grid-cols-2 md:grid-cols-4 lg:grid-cols-6" :
-          name === "premium-games" ? "grid-cols-2 md:grid-cols-3 lg:grid-cols-5" :
+          name === "games" ? "grid-cols-2 md:grid-cols-3 lg:grid-cols-5" :
           "grid-cols-3 md:grid-cols-3 lg:grid-cols-10"
         }`}>
           {state.slice(0, visibleGames).map((_ele, i) => {
+            console.log(state[0].url);
             const GetSlug = _ele?.name?.en?.toLowerCase().replace(/\s+/g, "-");
-            return <GameCard key={i} id={i} slug={GetSlug} name={_ele?.name?.en} banner={_ele?.assets?.square} link={_ele?.URL} />;
+            return <GameCard key={i} state={state} id={i} slug={GetSlug ||state[i].url} name={_ele?.name?.en || state[i].title} banner={_ele?.assets?.square || state[i].icon} link={_ele?.URL ||state[i].url} />;
           })}
           {state.length === 0 && (
             <div className="col-span-12 rounded-lg bg-white w-full h-40 flex justify-center items-center my-4">

@@ -252,7 +252,8 @@ const Sidebar = () => {
                                 onClick={toggleSidebar}
                                 aria-controls="logo-sidebar"
                                 type="button"
-                                className="inline-flex  items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 "
+                                className="inline-flex  items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-500 dark:hover:bg-gray-600 dark:focus:ring-black
+                                -600 "
                             >
                                 <span className="sr-only">Open sidebar</span>
                                 <svg
@@ -270,10 +271,10 @@ const Sidebar = () => {
                                 </svg>
                             </button>
                             <div className='flex justify-between' >
-                                <a href="/" className="flex ms-2 md:me-24">
+                                <a href="/" className="flex ms-2 md:me-40">
                                     <img
                                         src={`/logo2.jpg`}
-                                        className="h-8 me-20"
+                                        className="h-16 me-20"
                                         alt="thegamezone Logo"
                                     />
                                     <span className="self-center text-xl font-cursive font-bold sm:text-2xl whitespace-nowrap dark:text-white">
@@ -283,15 +284,15 @@ const Sidebar = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex w-full items-center justify-end'>
-                    <button onClick={toggleSignIn} className="text-white">Sign In</button>
+                    {/* <div className='flex w-full items-center justify-end'>
+                    <button onClick={toggleSignIn} className="text-white">Sign In</button> */}
                         {/* <a target='_blank' href='https://9841.play.gamezop.com/'><img src='/icons/games_win.png' alt="gamezop" width="32px" /></a> */}
-                        <a target='_blank' href='https://9842.read.newszop.com/'><img src='/icons/news.png' alt="newszop" width="40px" /></a>
-                    </div>
+                        {/* <a target='_blank' href='https://9842.read.newszop.com/'><img src='/icons/news.png' alt="newszop" width="40px" /></a>
+                    </div> */}
                 </div>
             </nav>
              {/* Sign In Modal */}
-             {isSignInOpen && (
+             {/* {isSignInOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
                     <div className="bg-white p-6 rounded shadow-lg">
                         <h2 className="text-xl font-bold">Sign In</h2>
@@ -303,7 +304,7 @@ const Sidebar = () => {
                         </form>
                     </div>
                 </div>
-            )}
+            )} */}
              
             {/* Sidebar */}
             <aside
@@ -351,7 +352,7 @@ const Sidebar = () => {
                                             onClick={() => setIsSidebarOpen(false)}
                                             className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                                         >
-                                            <img src="/logo.png" alt={item} width="20px" />
+                                            <img src="/logo2.jpg" alt={item} width="20px" />
                                             <span className="flex-1 ms-3 whitespace-nowrap">{item}</span>
                                         </Link>
                                     </li>
@@ -361,7 +362,7 @@ const Sidebar = () => {
                     </ul>
 
                     {/* Dark Mode Toggle */}
-                    <button
+                    {/* <button
                         onClick={toggleDarkMode}
                         className="absolute bottom-4 left-4 p-2 dark:bg-white bg-gray-100 text-gray-500 dark:text-gray-400 rounded-full"
                     >
@@ -370,7 +371,7 @@ const Sidebar = () => {
                         ) : (
                             <img src='https://static.gamezop.com/comet/assets/img/theme/sun-fill.svg' width="20px" />
                         )}
-                    </button>
+                    </button> */}
                 </div>
             </aside>
         </>

@@ -7,7 +7,7 @@ function BlogCard({ name, banner, slug, img, _ele }) {
     const handleImageLoad = () => setImageLoaded(true);
 
     return (
-        <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105 cursor-pointer">
+        <div className="bg-white dark:bg-black rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105 cursor-pointer">
             <Link to={`/blog/${slug}`}>
                 <div className="relative w-full h-48 bg-gray-200 dark:bg-gray-700">
                     {!imageLoaded && (
