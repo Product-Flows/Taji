@@ -15,7 +15,7 @@ function Category() {
   const getGameListFunc = async () => {
     try {
       let apiUrl = name === "games"
-        ? "https://thingproxy.freeboard.io/fetch/https://tajigames.com/api/api.php?type=gameList"
+        ? "https://tajigames.com/api/api.php?type=gameList"
         : "https://pub.gamezop.com/v3/games?id=9632&lang=en";
 
        
